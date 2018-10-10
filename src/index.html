@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+
+<section>
+    <div class="main-section">
+        <div class="row">
+            <div class="property">Вес изделия</div>
+            <div class="choose-option form">
+                <input type="text" name="weight" placeholder="000" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="property">Проба металла</div>
+            <div class="choose-option form">
+                <div class="dropdown-wrapper">
+                    <i class="down-metal"></i>
+                    <select class="metal" required>
+                        <option value="585">585 проба</option>
+                        <option value="750">750 проба</option>
+                        <option value="900">900 проба</option>
+                        <option value="999">999 проба</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="property checkbox">
+                <label class="switch">
+                    <input name="attributes" type="checkbox">
+                    <div class="slider round">
+                        <div>нет</div>
+                        <div>да</div>
+                    </div>
+                </label>
+                <div class="attributes">Камни и вставки</div>
+            </div>
+            <div class="choose-option">
+                <div class="checkbox-text">
+                    Окончательная оценочная стоимость залога может отличаться от указанной в расчете
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="property">
+                <div>Тарифный план</div>
+                <div class="information">i
+                    <span class="tooltip-text">Всплывающая подсказка</span>
+                </div>
+            </div>
+            <div class="choose-option">
+                <div class="dropdown-wrapper">
+                    <i class="down"></i>
+                    <select class="dropdown"  required>
+                        <option value="simple">Простой</option>
+                        <option value="общий">Общий</option>
+                        <option value="доступный">Доступный</option>
+                        <option value="доступный+">Доступный+</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="property">Ваш дисконтный статус</div>
+            <div class="choose-option">
+                <div class="dropdown-wrapper">
+                    <i class="down"></i>
+                    <select class="dropdown" required>
+                        <option value="simple">Простой</option>
+                        <option value="общий">Общий</option>
+                        <option value="доступный">Доступный</option>
+                        <option value="доступный+">Доступный+</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row counter">
+            <div class="property">Срок кредитования</br>до продления</div>
+            <div class="choose-option">
+                <input class="" type="range" min="0" max="31" step="1" value="15">
+            </div>
+        </div>
+        <div class="row">
+            <div class="property">
+                <button type="submit" class="calculate">Рассчитать кредит</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
